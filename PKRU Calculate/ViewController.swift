@@ -15,7 +15,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var number1Outlet: UITextField!
     @IBOutlet weak var number2Outlet: UITextField!
     @IBAction func calculateButton(_ sender: Any) {
-    }
+        
+        //Get Value From TextField
+        let strNumber1 = number1Outlet.text
+        
+        let strNumber2 = number2Outlet.text
+        
+        print("strNumber1 = \(strNumber1!)")
+        print("strNumber2 = \(strNumber2!)")
+        
+        let intAnswer = Int(strNumber1!)! + Int(strNumber2!)!
+        
+        answerOutlet.text = String("Answer = \(intAnswer)")
+        
+        
+        
+        
+        
+    }   // calculateButton
     
     
     
